@@ -8,7 +8,7 @@ public class LollipopRadioButton : RadioButton
 {
     #region Variables
 
-    string HexColor = "#508ef5";
+    Color HexColor = ColorTranslator.FromHtml("#508ef5");
 
     Color EnabledCheckedColor;
     Color EnabledUnCheckedColor = ColorTranslator.FromHtml("#9c9ea1");
@@ -30,7 +30,7 @@ public class LollipopRadioButton : RadioButton
     #region  Properties
 
     [Category("Appearance")]
-    public string CheckColor
+    public Color CheckColor
     {
         get { return HexColor; }
         set
@@ -71,7 +71,7 @@ public class LollipopRadioButton : RadioButton
 
         Rectangle BGEllipse = new Rectangle(0, 0, 18, 18);
 
-        EnabledCheckedColor = ColorTranslator.FromHtml(HexColor);
+        EnabledCheckedColor = HexColor;
         SolidBrush BG = new SolidBrush(Enabled ? Checked ? EnabledCheckedColor : EnabledUnCheckedColor : DisabledColor);
 
         //RadioButton BG

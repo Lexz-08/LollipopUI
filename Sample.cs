@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LollipopUI
 {
-    public partial class UserControl1: UserControl
+    public partial class Sample: UserControl
     {
-        public UserControl1()
+        public Sample()
         {
             InitializeComponent();
         }

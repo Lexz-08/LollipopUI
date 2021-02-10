@@ -17,9 +17,9 @@ public class LollipopCard : Control
     LollipopFlatButton OKButton = new LollipopFlatButton();
 
     string info = "Card Content is here";
-    string TColor = "#33b679";
-    string CColor = "#444444";
-    string BColor = "#33b679";
+    Color TColor = ColorTranslator.FromHtml("#33b679");
+    Color CColor = ColorTranslator.FromHtml("#444444");
+    Color BColor = ColorTranslator.FromHtml("#33b679");
 
     bool Growing;
 
@@ -42,7 +42,7 @@ public class LollipopCard : Control
     }
 
     [Category("Appearance")]
-    public string TitleColor
+    public Color TitleColor
     {
         get { return TColor; }
         set
@@ -53,7 +53,7 @@ public class LollipopCard : Control
     }
 
     [Category("Appearance")]
-    public string ButtonColor
+    public Color ButtonColor
     {
         get { return BColor; }
         set
@@ -65,7 +65,7 @@ public class LollipopCard : Control
     }
 
     [Category("Appearance")]
-    public string ContentColor
+    public Color ContentColor
     {
         get { return CColor; }
         set
@@ -121,7 +121,7 @@ public class LollipopCard : Control
         InfoLabel.AutoSize = false;
         InfoLabel.Font = font.Roboto_Medium9;
         InfoLabel.Location = new Point(13, 209);
-        InfoLabel.ForeColor = ColorTranslator.FromHtml(CColor);
+        InfoLabel.ForeColor = CColor;
 
         InfoLabel.Width = 265;
         InfoLabel.Text = info;
@@ -162,7 +162,7 @@ public class LollipopCard : Control
         G.SmoothingMode = SmoothingMode.HighQuality;
         G.Clear(Parent.BackColor);
 
-        InfoLabel.ForeColor = ColorTranslator.FromHtml(CColor);
+        InfoLabel.ForeColor = CColor;
 
         Color NonColor = ColorTranslator.FromHtml("#e3e5e7");
 
@@ -177,7 +177,7 @@ public class LollipopCard : Control
         G.FillPath(new SolidBrush(Color.White), BG);
         G.DrawPath(new Pen(ColorTranslator.FromHtml("#dadcdf")), BG);
 
-        G.DrawString(Text, font.Roboto_Medium15, new SolidBrush(ColorTranslator.FromHtml(TColor)), 12, 176);
+        G.DrawString(Text, font.Roboto_Medium15, new SolidBrush(TColor), 12, 176);
 
         G.SmoothingMode = SmoothingMode.None;
         G.FillRectangle(new SolidBrush(ColorTranslator.FromHtml("#e3e5e7")), 16, InfoLabel.Location.Y + InfoLabel.Height + 14, 261, 1);

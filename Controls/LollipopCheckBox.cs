@@ -10,7 +10,7 @@ public class LollipopCheckBox : CheckBox
 
     static Point[] CHECKMARK_LINE = { new Point(3, 8), new Point(7, 12), new Point(14, 5) };
 
-    string HexColor = "#508ef5";
+    Color HexColor = ColorTranslator.FromHtml("#508ef5");
 
     Color EnabledCheckedColor;
     Color EnabledUnCheckedColor = ColorTranslator.FromHtml("#9c9ea1");
@@ -31,7 +31,7 @@ public class LollipopCheckBox : CheckBox
     #region  Properties
 
     [Category("Appearance")]
-    public string CheckColor
+    public Color CheckColor
     {
         get { return HexColor; }
         set
@@ -70,7 +70,7 @@ public class LollipopCheckBox : CheckBox
         var checkMarkLine = new Rectangle(1, 1, 16, 16);
         var checkmarkPath = DrawHelper.CreateRoundRect(1, 1, 17, 17, 1);
 
-        EnabledCheckedColor = ColorTranslator.FromHtml(HexColor);
+        EnabledCheckedColor = HexColor;
         SolidBrush BG = new SolidBrush(Enabled ? Checked ? EnabledCheckedColor : EnabledUnCheckedColor : DisabledColor);
         Pen Pen = new Pen(BG.Color);
 
@@ -85,7 +85,7 @@ public class LollipopCheckBox : CheckBox
         g.DrawImageUnscaledAndClipped(CheckMarkBitmap(), checkMarkLine);
         
         //CheckBox Text
-        g.DrawString(Text, font.Roboto_Medium10, new SolidBrush(Enabled ? EnabledStringColor : DisabledStringColor), 21, 2);
+        g.DrawString(Text, font.Roboto_Medium10, new SolidBrush(Enabled ? EnabledStringColor : DisabledStringColor), 21, 1);
     }
 
     void AnimationTick(object sender, EventArgs e)

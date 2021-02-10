@@ -33,8 +33,8 @@ public class LollipopFolderInPut : Control
     float PointAnimation;
     float PointInc_Dec;
 
-    string fontColor = "#999999";
-    private string focusColor = "#508ef5";
+    Color fontColor = ColorTranslator.FromHtml("#999999");
+    private Color focusColor = ColorTranslator.FromHtml("#508ef5");
 
     Color EnabledFocusedColor;
     Color EnabledStringColor;
@@ -137,7 +137,7 @@ public class LollipopFolderInPut : Control
     }
 
     [Category("Appearance")]
-    public string FocusedColor
+    public Color FocusedColor
     {
         get { return focusColor; }
         set
@@ -148,7 +148,7 @@ public class LollipopFolderInPut : Control
     }
 
     [Category("Appearance")]
-    public string FontColor
+    public Color FontColor
     {
         get { return fontColor; }
         set
@@ -303,8 +303,8 @@ public class LollipopFolderInPut : Control
         Graphics G = Graphics.FromImage(B);
         G.Clear(Color.Transparent);
 
-        EnabledStringColor = ColorTranslator.FromHtml(fontColor);
-        EnabledFocusedColor = ColorTranslator.FromHtml(focusColor);
+        EnabledStringColor = fontColor;
+        EnabledFocusedColor = focusColor;
 
         LollipopTB.TextAlign = TextAlignment;
         LollipopTB.ForeColor = IsEnabled ? EnabledStringColor : DisabledStringColor;

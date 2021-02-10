@@ -3,7 +3,6 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-using Transitions;
 
 public class LollipopButton : Control
 {
@@ -32,8 +31,34 @@ public class LollipopButton : Control
 
     Color DisabledBGColor = ColorTranslator.FromHtml("#b0b2b5");
 
+    int radius = 2;
+
     #endregion
     #region  Properties
+
+    [Category("Appearance")]
+    public int Radius
+	{
+		get { return radius; }
+		set
+		{
+            if (value < 2)
+			{
+                value = 2;
+                radius = value;
+			}
+            else if (value > Math.Min(Width, Height) / 2)
+			{
+                value = Math.Min(Width, Height) / 2;
+                radius = value;
+			}
+			else
+			{
+                radius = value;
+			}
+            Invalidate();
+		}
+	}
 
     [Category("Appearance")]
     public Color BGColor
@@ -121,7 +146,7 @@ public class LollipopButton : Control
     protected override void OnResize(System.EventArgs e)
     {
         base.OnResize(e);
-        SizeIncNum = 12;
+        SizeIncNum = 11;
     }
 
     protected override void OnPaint(PaintEventArgs e)
@@ -135,7 +160,7 @@ public class LollipopButton : Control
         StringColor = fontcolor;
         EnabledBGColor = Backcolor;
 
-        var BG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 3, 1);
+        var BG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 3, radius);
         Region region = new Region(BG);
 
         G.FillPath(new SolidBrush(Enabled? EnabledBGColor:DisabledBGColor), BG);

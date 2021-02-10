@@ -11,8 +11,8 @@ public class LollipopToggle : CheckBox
     Timer AnimationTimer = new Timer { Interval = 1 };
     GraphicsPath RoundedRectangle;
 
-    string EllipseBG = "#508ef5";
-    string EllipseBorder = "#3b73d1";
+    Color EllipseBG = ColorTranslator.FromHtml("#508ef5");
+    Color EllipseBorder = ColorTranslator.FromHtml("#3b73d1");
 
     Color EllipseBackColor;
     Color EllipseBorderBackColor;
@@ -29,7 +29,7 @@ public class LollipopToggle : CheckBox
     #region  Properties
 
     [Category("Appearance")]
-    public string EllipseColor
+    public Color EllipseColor
     {
         get { return EllipseBG; }
         set
@@ -39,7 +39,7 @@ public class LollipopToggle : CheckBox
         }
     }
     [Category("Appearance")]
-    public string EllipseBorderColor
+    public Color EllipseBorderColor
     {
         get { return EllipseBorder; }
         set
@@ -87,8 +87,8 @@ public class LollipopToggle : CheckBox
         G.SmoothingMode = SmoothingMode.AntiAlias;
         G.Clear(Parent.BackColor);
 
-        EllipseBackColor = ColorTranslator.FromHtml(EllipseBG);
-        EllipseBorderBackColor = ColorTranslator.FromHtml(EllipseBorder);
+        EllipseBackColor = EllipseBG;
+        EllipseBorderBackColor = EllipseBorder;
 
         G.FillPath(new SolidBrush(Color.FromArgb(115, Enabled ? Checked ? EllipseBackColor : EnabledUnCheckedColor : EnabledUnCheckedColor)), RoundedRectangle);
         G.DrawPath(new Pen(Color.FromArgb(50, Enabled ? Checked ? EllipseBackColor : EnabledUnCheckedColor : EnabledUnCheckedColor)), RoundedRectangle);

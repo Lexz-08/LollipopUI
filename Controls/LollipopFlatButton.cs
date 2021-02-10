@@ -23,7 +23,7 @@ public class LollipopFlatButton : Control
     float SizeAnimation = 0;
     float SizeIncNum;
 
-    string fontcolor = "#508ef5";
+    Color fontcolor = ColorTranslator.FromHtml("#508ef5");
 
     Color EnabledBGColor;
     Color EnabledBorderColor;
@@ -35,7 +35,7 @@ public class LollipopFlatButton : Control
     #region  Properties
 
     [Category("Appearance")]
-    public string FontColor
+    public Color FontColor
     {
         get { return fontcolor; }
         set
@@ -130,7 +130,7 @@ public class LollipopFlatButton : Control
     protected override void OnResize(System.EventArgs e)
     {
         base.OnResize(e);
-        SizeIncNum = 12;
+        SizeIncNum = 11;
     }
 
     protected override void OnPaint(PaintEventArgs e)
@@ -141,7 +141,7 @@ public class LollipopFlatButton : Control
         G.SmoothingMode = SmoothingMode.HighQuality;
         G.Clear(Parent.BackColor);
 
-        StringColor = ColorTranslator.FromHtml(fontcolor);
+        StringColor = fontcolor;
 
         var BG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 3, 1);
         Region region = new Region(BG);

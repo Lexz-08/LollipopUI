@@ -14,8 +14,8 @@ public class LollipopSmallCard : Control
     Image image;
 
     string information = "Info";
-    string fontcolor = "#33b679";
-    string thumbnailcolor = "#33b679";
+    Color fontcolor = ColorTranslator.FromHtml("#33b679");
+    Color thumbnailcolor = ColorTranslator.FromHtml("#33b679");
 
     Color BgColor;
     Color StringColor;
@@ -40,7 +40,7 @@ public class LollipopSmallCard : Control
     }
 
     [Category("Appearance")]
-    public string ThumbnailColor
+    public Color ThumbnailColor
     {
         get { return thumbnailcolor; }
         set
@@ -51,7 +51,7 @@ public class LollipopSmallCard : Control
     }
 
     [Category("Appearance")]
-    public string FontColor
+    public Color FontColor
     {
         get { return fontcolor; }
         set
@@ -127,8 +127,8 @@ public class LollipopSmallCard : Control
         G.SmoothingMode = SmoothingMode.HighQuality;
         G.Clear(Parent.BackColor);
 
-        StringColor = ColorTranslator.FromHtml(fontcolor);
-        ThumbnailBGColor = ColorTranslator.FromHtml(thumbnailcolor);
+        StringColor = fontcolor;
+        ThumbnailBGColor = thumbnailcolor;
 
         var BG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 3, 1);
         var ThumbnailBG = DrawHelper.CreateLeftRoundRect(1, 1, 50, 49, 1);
@@ -147,6 +147,6 @@ public class LollipopSmallCard : Control
         { G.DrawString("Wait...", font.Roboto_Medium10, new SolidBrush(StringColor), new PointF(58.6f, 9f)); }
 
         G.TextRenderingHint = TextRenderingHint.AntiAlias;
-        G.DrawString(information, font.Roboto_Regular9, new SolidBrush(Color.White), new PointF(59.1f, 26f));
+        G.DrawString(information, font.Roboto_Regular9, new SolidBrush(Color.Gray), new PointF(59.1f, 26f));
     }
 }

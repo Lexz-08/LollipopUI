@@ -9,7 +9,7 @@ public class LollipopProgressBar : Control
     #region variables
     
     int ProgressNum = 10;
-    string ProgressColor = "#508ef5";
+    Color ProgressColor = ColorTranslator.FromHtml("#508ef5");
 
     Color BackGroundColor;
 
@@ -17,7 +17,7 @@ public class LollipopProgressBar : Control
     #region Properties
 
     [Category("Appearance")]
-    public string BGColor
+    public Color BGColor
     {
         get { return ProgressColor; }
         set
@@ -52,7 +52,7 @@ public class LollipopProgressBar : Control
         Graphics G = e.Graphics;
         G.Clear(Parent.BackColor);
 
-        BackGroundColor = ColorTranslator.FromHtml(ProgressColor);
+        BackGroundColor = ProgressColor;
         G.FillRectangle(new SolidBrush(Color.FromArgb(68,BackGroundColor)), 0, 0, Width, Height);
 
 
