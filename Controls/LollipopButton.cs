@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using Transitions;
 
 public class LollipopButton : Control
 {
@@ -23,8 +24,8 @@ public class LollipopButton : Control
     float SizeAnimation = 0;
     float SizeIncNum;
 
-    string fontcolor = "#ffffff";
-    string Backcolor = "#508ef5";
+    Color fontcolor = Color.White;
+    Color Backcolor = Color.FromArgb(80, 142, 245);
 
     Color EnabledBGColor;
     Color StringColor;
@@ -35,7 +36,7 @@ public class LollipopButton : Control
     #region  Properties
 
     [Category("Appearance")]
-    public string BGColor
+    public Color BGColor
     {
         get { return Backcolor; }
         set
@@ -46,7 +47,7 @@ public class LollipopButton : Control
     }
 
     [Category("Appearance")]
-    public string FontColor
+    public Color FontColor
     {
         get { return fontcolor; }
         set
@@ -120,7 +121,7 @@ public class LollipopButton : Control
     protected override void OnResize(System.EventArgs e)
     {
         base.OnResize(e);
-        SizeIncNum = 10;
+        SizeIncNum = 12;
     }
 
     protected override void OnPaint(PaintEventArgs e)
@@ -131,8 +132,8 @@ public class LollipopButton : Control
         G.SmoothingMode = SmoothingMode.HighQuality;
         G.Clear(Parent.BackColor);
 
-        StringColor = ColorTranslator.FromHtml(fontcolor);
-        EnabledBGColor = ColorTranslator.FromHtml(Backcolor);
+        StringColor = fontcolor;
+        EnabledBGColor = Backcolor;
 
         var BG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 3, 1);
         Region region = new Region(BG);

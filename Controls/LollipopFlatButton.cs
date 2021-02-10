@@ -130,7 +130,7 @@ public class LollipopFlatButton : Control
     protected override void OnResize(System.EventArgs e)
     {
         base.OnResize(e);
-        SizeIncNum = 10;
+        SizeIncNum = 12;
     }
 
     protected override void OnPaint(PaintEventArgs e)

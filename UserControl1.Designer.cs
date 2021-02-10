@@ -1,4 +1,6 @@
-﻿namespace LollipopUI
+﻿using System.Drawing;
+
+namespace LollipopUI
 {
     partial class UserControl1
     {
@@ -51,8 +53,8 @@
 			// lollipopButton1
 			// 
 			this.lollipopButton1.BackColor = System.Drawing.Color.Transparent;
-			this.lollipopButton1.BGColor = "#508ef5";
-			this.lollipopButton1.FontColor = "#ffffff";
+			this.lollipopButton1.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopButton1.FontColor = System.Drawing.Color.White;
 			this.lollipopButton1.Location = new System.Drawing.Point(24, 25);
 			this.lollipopButton1.Name = "lollipopButton1";
 			this.lollipopButton1.Size = new System.Drawing.Size(143, 41);
@@ -251,7 +253,7 @@
 			this.tabPage2.Location = new System.Drawing.Point(0, 40);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(200, 60);
+			this.tabPage2.Size = new System.Drawing.Size(957, 165);
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "tabPage2";
 			this.tabPage2.UseVisualStyleBackColor = true;
