@@ -243,7 +243,7 @@ public class LollipopFileInput : Control
 
         Height = 24;
 
-        PointAnimation = Width / 2;
+        PointAnimation = (Width / 2) - 22;
         SizeInc_Dec = Width / 18;
         PointInc_Dec = Width / 36;
 
@@ -255,8 +255,8 @@ public class LollipopFileInput : Control
     #endregion
     public void AddButton()
     {
-        InPutBTN.Location = new Point(Width - 21, 1);
-        InPutBTN.Size = new Size(21, 20);
+        InPutBTN.Location = new Point(Width - 21, 3);
+        InPutBTN.Size = new Size(21, 18);
 
         InPutBTN.ForeColor = Color.FromArgb(255, 255, 255);
         InPutBTN.TextAlign = ContentAlignment.MiddleCenter;
@@ -275,8 +275,8 @@ public class LollipopFileInput : Control
     public void AddTextBox()
     {
         LollipopTB.Text = Text;
-        LollipopTB.Location = new Point(0, 1);
-        LollipopTB.Size = new Size(Width - 21, 20);
+        LollipopTB.Location = new Point(0, 3);
+        LollipopTB.Size = new Size(Width - 21, 18);
 
         LollipopTB.Multiline = false;
         LollipopTB.Font = font.Roboto_Regular10;
@@ -327,14 +327,14 @@ public class LollipopFileInput : Control
         LollipopTB.ForeColor = IsEnabled ? EnabledStringColor : DisabledStringColor;
         LollipopTB.UseSystemPasswordChar = UseSystemPasswordChar;
 
-        G.DrawLine(new Pen(new SolidBrush(IsEnabled ? EnabledUnFocusedColor : DisabledUnFocusedColor)), new Point(0, Height - 2), new Point(Width - 22, Height - 2));
+        G.DrawLine(new Pen(new SolidBrush(IsEnabled ? EnabledUnFocusedColor : DisabledUnFocusedColor), 2), new Point(0, Height - 2), new Point(Width, Height - 2));
         if (IsEnabled)
         { G.FillRectangle(new SolidBrush(EnabledFocusedColor), PointAnimation, (float)Height - 3, SizeAnimation, 2); }
 
         G.SmoothingMode = SmoothingMode.AntiAlias;
-        G.FillEllipse(new SolidBrush(IsEnabled ? EnabledInPutColor : DisabledInputColor), Width - 5, 9, 4, 4);
-        G.FillEllipse(new SolidBrush(IsEnabled ? EnabledInPutColor : DisabledInputColor), Width - 11, 9, 4, 4);
-        G.FillEllipse(new SolidBrush(IsEnabled ? EnabledInPutColor : DisabledInputColor), Width - 17, 9, 4, 4);
+        G.FillEllipse(new SolidBrush(IsEnabled ? EnabledInPutColor : DisabledInputColor), Width - 5, 10, 4, 4);
+        G.FillEllipse(new SolidBrush(IsEnabled ? EnabledInPutColor : DisabledInputColor), Width - 11, 10, 4, 4);
+        G.FillEllipse(new SolidBrush(IsEnabled ? EnabledInPutColor : DisabledInputColor), Width - 17, 10, 4, 4);
 
         e.Graphics.DrawImage((Image)(B.Clone()), 0, 0);
         G.Dispose();

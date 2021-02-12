@@ -143,7 +143,7 @@ public class LollipopFlatButton : Control
 
         StringColor = fontcolor;
 
-        var BG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 3, 1);
+        var BG = RoundRectangle1.CreateRoundRect(0, 0, Width - 1, Height - 1, 3);
         Region region = new Region(BG);
 
         G.FillPath(new SolidBrush(Enabled ? EnabledBGColor : Parent.BackColor), BG);
