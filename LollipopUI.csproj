@@ -43,6 +43,9 @@
     <Compile Include="Controls\LollipopCard.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\LollipopRadioCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\LollipopCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -59,6 +62,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\LollipopProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LollipopRoundCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\LollipopRadioButton.cs">
