@@ -13,7 +13,7 @@ Original Author: Viki4Tech
 [mega.nz - Release](https://mega.nz/file/bQNSDRyb#dxB-gCGjG8dk6vNwTRf3wKrFUs571M_6qi9xbAnyC6U)
 
 ### Tags
-[![](https://img.shields.io/badge/build-stable-brightgreen)](#)
-[![](https://img.shields.io/badge/development-on--hold-inactive)](#)
-[![](https://img.shields.io/badge/version-1-inactive)](#)
+[![](https://img.shields.io/badge/build-stable-brightgreen)](#)<br/>
+[![](https://img.shields.io/badge/development-on--hold-inactive)](#)<br/>
+[![](https://img.shields.io/badge/version-1-inactive)](#)<br/>
 [![](https://img.shields.io/badge/GitHub--Connection-stable-brightgreen)](#)
