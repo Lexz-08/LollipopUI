@@ -195,6 +195,13 @@ public class LollipopFileInput : Control
     #endregion
     #region  Events
 
+    public event EventHandler SelectedFile;
+    protected virtual void OnSelectedFile(EventArgs e)
+	{
+        SelectedFile?.Invoke(this, e);
+        Invalidate();
+	}
+
     protected void OnKeyDown(object Obj, KeyEventArgs e)
     {
         if (e.Control && e.KeyCode == Keys.A)
@@ -222,6 +229,7 @@ public class LollipopFileInput : Control
         if (result == DialogResult.OK && Dialog.SafeFileName != null)
         {
             Text = Dialog.FileName;
+            OnSelectedFile(e);
         }
         Focus();
     }

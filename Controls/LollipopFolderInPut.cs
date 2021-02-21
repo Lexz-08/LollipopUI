@@ -182,6 +182,13 @@ public class LollipopFolderInPut : Control
     #endregion
     #region  Events
 
+    public event EventHandler SelectedFolder;
+    protected virtual void OnSelectedFolder(EventArgs e)
+	{
+        SelectedFolder?.Invoke(this, e);
+        Invalidate();
+	}
+
     protected void OnKeyDown(object Obj, KeyEventArgs e)
     {
         if (e.Control && e.KeyCode == Keys.A)
@@ -205,6 +212,7 @@ public class LollipopFolderInPut : Control
         Dialog = new FolderBrowserDialog();
         Dialog.ShowDialog();
         Text = Dialog.SelectedPath;
+        OnSelectedFolder(e);
         Focus();
     }
     protected override void OnTextChanged(System.EventArgs e)

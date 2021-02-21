@@ -33,7 +33,6 @@ namespace LollipopUI
 			this.lollipopButton1 = new LollipopButton();
 			this.lollipopCheckBox1 = new LollipopCheckBox();
 			this.lollipopCheckBox2 = new LollipopCheckBox();
-			this.lollipopFileInput1 = new LollipopFileInput();
 			this.lollipopFlatButton1 = new LollipopFlatButton();
 			this.lollipopLabel1 = new LollipopLabel();
 			this.lollipopProgressBar1 = new LollipopProgressBar();
@@ -45,10 +44,11 @@ namespace LollipopUI
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.lollipopTextBox1 = new LollipopTextBox();
-			this.lollipopFolderInPut1 = new LollipopFolderInPut();
 			this.lollipopToggle1 = new LollipopToggle();
 			this.lollipopSmallCard1 = new LollipopSmallCard();
 			this.lollipopCard1 = new LollipopCard();
+			this.lollipopFolderInPut1 = new LollipopFolderInPut();
+			this.lollipopFileInput1 = new LollipopFileInput();
 			this.lollipopTabControl1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -86,22 +86,6 @@ namespace LollipopUI
 			this.lollipopCheckBox2.TabIndex = 3;
 			this.lollipopCheckBox2.Text = "CheckBox";
 			this.lollipopCheckBox2.UseVisualStyleBackColor = true;
-			// 
-			// lollipopFileInput1
-			// 
-			this.lollipopFileInput1.Filter = "All Files (*.*)|*.*";
-			this.lollipopFileInput1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopFileInput1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-			this.lollipopFileInput1.IsEnabled = true;
-			this.lollipopFileInput1.Location = new System.Drawing.Point(9, 359);
-			this.lollipopFileInput1.MaxLength = 32767;
-			this.lollipopFileInput1.Name = "lollipopFileInput1";
-			this.lollipopFileInput1.ReadOnly = false;
-			this.lollipopFileInput1.Size = new System.Drawing.Size(294, 24);
-			this.lollipopFileInput1.TabIndex = 4;
-			this.lollipopFileInput1.Text = "FileInput";
-			this.lollipopFileInput1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-			this.lollipopFileInput1.UseSystemPasswordChar = false;
 			// 
 			// lollipopFlatButton1
 			// 
@@ -232,21 +216,6 @@ namespace LollipopUI
 			this.lollipopTextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.lollipopTextBox1.UseSystemPasswordChar = false;
 			// 
-			// lollipopFolderInPut1
-			// 
-			this.lollipopFolderInPut1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopFolderInPut1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-			this.lollipopFolderInPut1.IsEnabled = true;
-			this.lollipopFolderInPut1.Location = new System.Drawing.Point(9, 436);
-			this.lollipopFolderInPut1.MaxLength = 32767;
-			this.lollipopFolderInPut1.Name = "lollipopFolderInPut1";
-			this.lollipopFolderInPut1.ReadOnly = false;
-			this.lollipopFolderInPut1.Size = new System.Drawing.Size(294, 24);
-			this.lollipopFolderInPut1.TabIndex = 16;
-			this.lollipopFolderInPut1.Text = "FolderInput";
-			this.lollipopFolderInPut1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-			this.lollipopFolderInPut1.UseSystemPasswordChar = false;
-			// 
 			// lollipopToggle1
 			// 
 			this.lollipopToggle1.AutoSize = true;
@@ -284,14 +253,46 @@ namespace LollipopUI
 			this.lollipopCard1.Text = "Card";
 			this.lollipopCard1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
 			// 
+			// lollipopFolderInPut1
+			// 
+			this.lollipopFolderInPut1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopFolderInPut1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+			this.lollipopFolderInPut1.IsEnabled = true;
+			this.lollipopFolderInPut1.Location = new System.Drawing.Point(9, 436);
+			this.lollipopFolderInPut1.MaxLength = 32767;
+			this.lollipopFolderInPut1.Name = "lollipopFolderInPut1";
+			this.lollipopFolderInPut1.ReadOnly = false;
+			this.lollipopFolderInPut1.Size = new System.Drawing.Size(294, 24);
+			this.lollipopFolderInPut1.TabIndex = 26;
+			this.lollipopFolderInPut1.Text = "FolderInput";
+			this.lollipopFolderInPut1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.lollipopFolderInPut1.UseSystemPasswordChar = false;
+			// 
+			// lollipopFileInput1
+			// 
+			this.lollipopFileInput1.Filter = "All Files (*.*)|*.*";
+			this.lollipopFileInput1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopFileInput1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+			this.lollipopFileInput1.IsEnabled = true;
+			this.lollipopFileInput1.Location = new System.Drawing.Point(9, 359);
+			this.lollipopFileInput1.MaxLength = 32767;
+			this.lollipopFileInput1.Name = "lollipopFileInput1";
+			this.lollipopFileInput1.ReadOnly = false;
+			this.lollipopFileInput1.Size = new System.Drawing.Size(294, 24);
+			this.lollipopFileInput1.TabIndex = 25;
+			this.lollipopFileInput1.Text = "FileInput";
+			this.lollipopFileInput1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.lollipopFileInput1.UseSystemPasswordChar = false;
+			// 
 			// Sample
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.lollipopFolderInPut1);
+			this.Controls.Add(this.lollipopFileInput1);
 			this.Controls.Add(this.lollipopCard1);
 			this.Controls.Add(this.lollipopSmallCard1);
 			this.Controls.Add(this.lollipopToggle1);
-			this.Controls.Add(this.lollipopFolderInPut1);
 			this.Controls.Add(this.lollipopTextBox1);
 			this.Controls.Add(this.lollipopTabControl1);
 			this.Controls.Add(this.lollipopRoundCheckBox2);
@@ -301,7 +302,6 @@ namespace LollipopUI
 			this.Controls.Add(this.lollipopProgressBar1);
 			this.Controls.Add(this.lollipopLabel1);
 			this.Controls.Add(this.lollipopFlatButton1);
-			this.Controls.Add(this.lollipopFileInput1);
 			this.Controls.Add(this.lollipopCheckBox2);
 			this.Controls.Add(this.lollipopCheckBox1);
 			this.Controls.Add(this.lollipopButton1);
@@ -318,7 +318,6 @@ namespace LollipopUI
 		private LollipopButton lollipopButton1;
 		private LollipopCheckBox lollipopCheckBox1;
 		private LollipopCheckBox lollipopCheckBox2;
-		private LollipopFileInput lollipopFileInput1;
 		private LollipopFlatButton lollipopFlatButton1;
 		private LollipopLabel lollipopLabel1;
 		private LollipopProgressBar lollipopProgressBar1;
@@ -330,9 +329,10 @@ namespace LollipopUI
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.TabPage tabPage2;
 		private LollipopTextBox lollipopTextBox1;
-		private LollipopFolderInPut lollipopFolderInPut1;
 		private LollipopToggle lollipopToggle1;
 		private LollipopSmallCard lollipopSmallCard1;
 		private LollipopCard lollipopCard1;
+		private LollipopFolderInPut lollipopFolderInPut1;
+		private LollipopFileInput lollipopFileInput1;
 	}
 }
