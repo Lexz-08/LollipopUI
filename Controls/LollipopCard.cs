@@ -120,8 +120,9 @@ public class LollipopCard : Control
     {
         InfoLabel.AutoSize = false;
         InfoLabel.Font = font.Roboto_Medium9;
-        InfoLabel.Location = new Point(13, 209);
+        InfoLabel.Location = new Point(13, 215);
         InfoLabel.ForeColor = CColor;
+        InfoLabel.BackColor = Color.White;
 
         InfoLabel.Width = 265;
         InfoLabel.Text = info;
@@ -166,10 +167,10 @@ public class LollipopCard : Control
 
         Color NonColor = ColorTranslator.FromHtml("#e3e5e7");
 
-        var PicBG = DrawHelper.CreateUpRoundRect(1, 1, 292, 164, 1);
-        var UpRoundedRec = DrawHelper.CreateUpRoundRect(1, 1, 291, 164, 1);
-        var BG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 5, 1);
-        var ShadowBG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 4, 2);
+        var PicBG = DrawHelper.CreateUpRoundRect(1, 1, 292, 164, 3);
+        var UpRoundedRec = DrawHelper.CreateUpRoundRect(1, 1, 291, 164, 3);
+        var BG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 5, 3);
+        var ShadowBG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 4, 4);
 
         G.FillPath(new SolidBrush(NonColor), ShadowBG);
         G.DrawPath(new Pen(NonColor), ShadowBG);

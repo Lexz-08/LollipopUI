@@ -130,8 +130,8 @@ public class LollipopSmallCard : Control
         StringColor = fontcolor;
         ThumbnailBGColor = thumbnailcolor;
 
-        var BG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 3, 1);
-        var ThumbnailBG = DrawHelper.CreateLeftRoundRect(1, 1, 50, 49, 1);
+        var BG = DrawHelper.CreateRoundRect(1, 1, Width - 3, Height - 3, 3);
+        var ThumbnailBG = DrawHelper.CreateLeftRoundRect(1, 1, 50, 49, 3);
 
         G.FillPath(new SolidBrush(BgColor), BG);
         G.DrawPath(new Pen(BorderColor), BG);
