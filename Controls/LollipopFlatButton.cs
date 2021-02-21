@@ -161,7 +161,7 @@ public class LollipopFlatButton : Control
     {
         if (Focus)
         {
-            if (SizeAnimation < Width + 250)
+            if (SizeAnimation < Width + 100000000)
             {
                 SizeAnimation += SizeIncNum;
                 this.Invalidate();
