@@ -9,8 +9,8 @@ Original Author: Viki4Tech
 [LollipopUI - Debug](https://github.com/Lexz-08/LollipopUI/release/download/LollipopUI/LollipopUI-Debug.dll)<br/>
 [LollipopUI - Release](https://github.com/Lexz-08/LollipopUI/release/download/LollipopUI/LollipopUI-Release.dll)
 #### MEGA.NZ Download (If those aren't working...)
-[mega.nz - Debug](https://mega.nz/file/SFFQUZzQ#-RHECX_DvIxLTWq7v2yWfYgAUQiP0UgGcAYX8Nk-hZM)<br/>
-[mega.nz - Release](https://mega.nz/file/bQNSDRyb#dxB-gCGjG8dk6vNwTRf3wKrFUs571M_6qi9xbAnyC6U)
+[mega.nz - Debug](https://mega.nz/file/LUVF0CiR#tM155R388_t5DHoRqiGHepkjT8hyzoiNUymXsKy9_rw)<br/>
+[mega.nz - Release](https://mega.nz/file/udcXna6a#6KKN2Y2EAQ_fBDPKagAlndR1dspV5WRKTh4oqKrCJs0)
 
 ### Changelog
   - added events to [LollipopFileInput.cs](./Controls/LollipopFileInput.cs) and [LollipopFolderInPut.cs](./Controls/LollipopFolderInPut.cs)
