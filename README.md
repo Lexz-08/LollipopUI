@@ -12,6 +12,10 @@ Original Author: Viki4Tech
 [mega.nz - Debug](https://mega.nz/file/SFFQUZzQ#-RHECX_DvIxLTWq7v2yWfYgAUQiP0UgGcAYX8Nk-hZM)<br/>
 [mega.nz - Release](https://mega.nz/file/bQNSDRyb#dxB-gCGjG8dk6vNwTRf3wKrFUs571M_6qi9xbAnyC6U)
 
+### Changelog
+  - added events to [LollipopFileInput.cs](./Controls/LollipopFileInput.cs) and [LollipopFolderInPut.cs](./Controls/LollipopFolderInPut.cs)
+  - raised the text location on the y axis for the [LollipopTabControl.cs](./Controls/LollipopTabControl.cs)
+
 ### Tags
 [![](https://img.shields.io/badge/build-stable-brightgreen)](#)<br/>
 [![](https://img.shields.io/badge/development-on--hold-inactive)](#)<br/>
