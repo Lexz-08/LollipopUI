@@ -9,8 +9,8 @@ Original Author: Viki4Tech
 [LollipopUI - Debug](https://github.com/Lexz-08/LollipopUI/release/download/LollipopUI/LollipopUI-Debug.dll)<br/>
 [LollipopUI - Release](https://github.com/Lexz-08/LollipopUI/release/download/LollipopUI/LollipopUI-Release.dll)
 #### MEGA.NZ Download (If those aren't working...)
-[mega.nz - Debug](https://mega.nz/file/nBV3kCRJ#NmqIUxGKVCzXb4yuGlMWSyNXpekxEAx6jwg9AoH2iRo)<br/>
-[mega.nz - Release](https://mega.nz/file/vMcxlKBJ#3BepS8b6Fve_0Lo17CULPZROl9OgiIXCHN4xEoy8oJE)
+[mega.nz - Debug](https://mega.nz/file/SFFQUZzQ#-RHECX_DvIxLTWq7v2yWfYgAUQiP0UgGcAYX8Nk-hZM)<br/>
+[mega.nz - Release](https://mega.nz/file/bQNSDRyb#dxB-gCGjG8dk6vNwTRf3wKrFUs571M_6qi9xbAnyC6U)
 
 ### Tags
 [![](https://img.shields.io/badge/build-stable-brightgreen)](#)
