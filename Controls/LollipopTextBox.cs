@@ -262,8 +262,8 @@ public class LollipopTextBox : Control
 
     public void AddTextBox()
     {
-        LollipopTB.Location = new Point(0, 1);
-        LollipopTB.Size = new Size(Width, 20);
+        LollipopTB.Location = new Point(0, 4);
+        LollipopTB.Size = new Size(Width, 18);
         LollipopTB.Text = Text;
 
         LollipopTB.BorderStyle = BorderStyle.None;

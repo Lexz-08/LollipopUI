@@ -258,8 +258,8 @@ public class LollipopFolderInPut : Control
     public void AddTextBox()
     {
         LollipopTB.Text = Text;
-        LollipopTB.Location = new Point(0, 1);
-        LollipopTB.Size = new Size(Width - 21, 20);
+        LollipopTB.Location = new Point(0, 4);
+        LollipopTB.Size = new Size(Width - 21, 18);
 
         LollipopTB.Multiline = false;
         LollipopTB.Font = font.Roboto_Regular10;
