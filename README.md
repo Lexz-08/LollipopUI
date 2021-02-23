@@ -9,8 +9,8 @@ Original Author: Viki4Tech
 [LollipopUI - Debug](https://github.com/Lexz-08/LollipopUI/release/download/LollipopUI/LollipopUI-Debug.dll)<br/>
 [LollipopUI - Release](https://github.com/Lexz-08/LollipopUI/release/download/LollipopUI/LollipopUI-Release.dll)
 #### MEGA.NZ Download (If those aren't working...)
-[mega.nz - Debug](https://mega.nz/file/LUVF0CiR#tM155R388_t5DHoRqiGHepkjT8hyzoiNUymXsKy9_rw)<br/>
-[mega.nz - Release](https://mega.nz/file/udcXna6a#6KKN2Y2EAQ_fBDPKagAlndR1dspV5WRKTh4oqKrCJs0)
+[mega.nz - Debug](https://mega.nz/file/DEkihDpB#MxvDn_aQeo0MDKS-6yktcgq7iz3RPQsGZO5an_tLn20)<br/>
+[mega.nz - Release](https://mega.nz/file/mY1CQDpI#QeOjpMfHXovAm9bvpQCX4XYTZEQIEbwujgGX1vR-beQ)
 
 ### Changelog
 #### 2/23/2021
