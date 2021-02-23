@@ -13,6 +13,9 @@ Original Author: Viki4Tech
 [mega.nz - Release](https://mega.nz/file/udcXna6a#6KKN2Y2EAQ_fBDPKagAlndR1dspV5WRKTh4oqKrCJs0)
 
 ### Changelog
+#### 2/23/2021
+  - added new [LollipopPasswordInput.cs](./Controls/LollipopPasswordInput.cs)
+#### 2/21/2021
   - added events to [LollipopFileInput.cs](./Controls/LollipopFileInput.cs) and [LollipopFolderInPut.cs](./Controls/LollipopFolderInPut.cs)
   - raised the text location on the y axis for the [LollipopTabControl.cs](./Controls/LollipopTabControl.cs)
 
