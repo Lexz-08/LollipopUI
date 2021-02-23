@@ -49,6 +49,7 @@ namespace LollipopUI
 			this.lollipopCard1 = new LollipopCard();
 			this.lollipopFolderInPut1 = new LollipopFolderInPut();
 			this.lollipopFileInput1 = new LollipopFileInput();
+			this.lollipopPasswordInput1 = new LollipopPasswordInput();
 			this.lollipopTabControl1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -284,10 +285,27 @@ namespace LollipopUI
 			this.lollipopFileInput1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.lollipopFileInput1.UseSystemPasswordChar = false;
 			// 
+			// lollipopPasswordInput1
+			// 
+			this.lollipopPasswordInput1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopPasswordInput1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+			this.lollipopPasswordInput1.IsEnabled = true;
+			this.lollipopPasswordInput1.Location = new System.Drawing.Point(309, 305);
+			this.lollipopPasswordInput1.MaxLength = 32767;
+			this.lollipopPasswordInput1.Multiline = false;
+			this.lollipopPasswordInput1.Name = "lollipopPasswordInput1";
+			this.lollipopPasswordInput1.ReadOnly = false;
+			this.lollipopPasswordInput1.ShowPassword = true;
+			this.lollipopPasswordInput1.Size = new System.Drawing.Size(243, 24);
+			this.lollipopPasswordInput1.TabIndex = 28;
+			this.lollipopPasswordInput1.Text = "PasswordInput";
+			this.lollipopPasswordInput1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			// 
 			// Sample
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.lollipopPasswordInput1);
 			this.Controls.Add(this.lollipopFolderInPut1);
 			this.Controls.Add(this.lollipopFileInput1);
 			this.Controls.Add(this.lollipopCard1);
@@ -334,5 +352,6 @@ namespace LollipopUI
 		private LollipopCard lollipopCard1;
 		private LollipopFolderInPut lollipopFolderInPut1;
 		private LollipopFileInput lollipopFileInput1;
+		private LollipopPasswordInput lollipopPasswordInput1;
 	}
 }

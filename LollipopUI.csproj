@@ -76,6 +76,9 @@
     <Compile Include="Controls\LollipopTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\LollipopPasswordInput.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\LollipopTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
