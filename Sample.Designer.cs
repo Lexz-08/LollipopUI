@@ -43,13 +43,13 @@ namespace LollipopUI
 			this.lollipopTabControl1 = new LollipopTabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.lollipopTextBox1 = new LollipopTextBox();
 			this.lollipopToggle1 = new LollipopToggle();
 			this.lollipopSmallCard1 = new LollipopSmallCard();
 			this.lollipopCard1 = new LollipopCard();
+			this.lollipopPasswordInput1 = new LollipopPasswordInput();
 			this.lollipopFolderInPut1 = new LollipopFolderInPut();
 			this.lollipopFileInput1 = new LollipopFileInput();
-			this.lollipopPasswordInput1 = new LollipopPasswordInput();
+			this.lollipopTextBox1 = new LollipopTextBox();
 			this.lollipopTabControl1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -201,22 +201,6 @@ namespace LollipopUI
 			this.tabPage2.Text = "tabPage2";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
-			// lollipopTextBox1
-			// 
-			this.lollipopTextBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopTextBox1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-			this.lollipopTextBox1.IsEnabled = true;
-			this.lollipopTextBox1.Location = new System.Drawing.Point(309, 250);
-			this.lollipopTextBox1.MaxLength = 32767;
-			this.lollipopTextBox1.Multiline = false;
-			this.lollipopTextBox1.Name = "lollipopTextBox1";
-			this.lollipopTextBox1.ReadOnly = false;
-			this.lollipopTextBox1.Size = new System.Drawing.Size(243, 24);
-			this.lollipopTextBox1.TabIndex = 15;
-			this.lollipopTextBox1.Text = "TextBox";
-			this.lollipopTextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
-			this.lollipopTextBox1.UseSystemPasswordChar = false;
-			// 
 			// lollipopToggle1
 			// 
 			this.lollipopToggle1.AutoSize = true;
@@ -254,6 +238,21 @@ namespace LollipopUI
 			this.lollipopCard1.Text = "Card";
 			this.lollipopCard1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
 			// 
+			// lollipopPasswordInput1
+			// 
+			this.lollipopPasswordInput1.BackColor = System.Drawing.SystemColors.Control;
+			this.lollipopPasswordInput1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopPasswordInput1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+			this.lollipopPasswordInput1.IsEnabled = true;
+			this.lollipopPasswordInput1.Location = new System.Drawing.Point(309, 305);
+			this.lollipopPasswordInput1.MaxLength = 32767;
+			this.lollipopPasswordInput1.Name = "lollipopPasswordInput1";
+			this.lollipopPasswordInput1.ShowPassword = true;
+			this.lollipopPasswordInput1.Size = new System.Drawing.Size(243, 24);
+			this.lollipopPasswordInput1.TabIndex = 36;
+			this.lollipopPasswordInput1.Text = "PasswordInput";
+			this.lollipopPasswordInput1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			// 
 			// lollipopFolderInPut1
 			// 
 			this.lollipopFolderInPut1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
@@ -264,7 +263,7 @@ namespace LollipopUI
 			this.lollipopFolderInPut1.Name = "lollipopFolderInPut1";
 			this.lollipopFolderInPut1.ReadOnly = false;
 			this.lollipopFolderInPut1.Size = new System.Drawing.Size(294, 24);
-			this.lollipopFolderInPut1.TabIndex = 26;
+			this.lollipopFolderInPut1.TabIndex = 35;
 			this.lollipopFolderInPut1.Text = "FolderInput";
 			this.lollipopFolderInPut1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.lollipopFolderInPut1.UseSystemPasswordChar = false;
@@ -280,26 +279,26 @@ namespace LollipopUI
 			this.lollipopFileInput1.Name = "lollipopFileInput1";
 			this.lollipopFileInput1.ReadOnly = false;
 			this.lollipopFileInput1.Size = new System.Drawing.Size(294, 24);
-			this.lollipopFileInput1.TabIndex = 25;
+			this.lollipopFileInput1.TabIndex = 34;
 			this.lollipopFileInput1.Text = "FileInput";
 			this.lollipopFileInput1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.lollipopFileInput1.UseSystemPasswordChar = false;
 			// 
-			// lollipopPasswordInput1
+			// lollipopTextBox1
 			// 
-			this.lollipopPasswordInput1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopPasswordInput1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-			this.lollipopPasswordInput1.IsEnabled = true;
-			this.lollipopPasswordInput1.Location = new System.Drawing.Point(309, 305);
-			this.lollipopPasswordInput1.MaxLength = 32767;
-			this.lollipopPasswordInput1.Multiline = false;
-			this.lollipopPasswordInput1.Name = "lollipopPasswordInput1";
-			this.lollipopPasswordInput1.ReadOnly = false;
-			this.lollipopPasswordInput1.ShowPassword = true;
-			this.lollipopPasswordInput1.Size = new System.Drawing.Size(243, 24);
-			this.lollipopPasswordInput1.TabIndex = 28;
-			this.lollipopPasswordInput1.Text = "PasswordInput";
-			this.lollipopPasswordInput1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.lollipopTextBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopTextBox1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+			this.lollipopTextBox1.IsEnabled = true;
+			this.lollipopTextBox1.Location = new System.Drawing.Point(309, 250);
+			this.lollipopTextBox1.MaxLength = 32767;
+			this.lollipopTextBox1.Multiline = false;
+			this.lollipopTextBox1.Name = "lollipopTextBox1";
+			this.lollipopTextBox1.ReadOnly = false;
+			this.lollipopTextBox1.Size = new System.Drawing.Size(243, 24);
+			this.lollipopTextBox1.TabIndex = 33;
+			this.lollipopTextBox1.Text = "TextBox";
+			this.lollipopTextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.lollipopTextBox1.UseSystemPasswordChar = false;
 			// 
 			// Sample
 			// 
@@ -308,10 +307,10 @@ namespace LollipopUI
 			this.Controls.Add(this.lollipopPasswordInput1);
 			this.Controls.Add(this.lollipopFolderInPut1);
 			this.Controls.Add(this.lollipopFileInput1);
+			this.Controls.Add(this.lollipopTextBox1);
 			this.Controls.Add(this.lollipopCard1);
 			this.Controls.Add(this.lollipopSmallCard1);
 			this.Controls.Add(this.lollipopToggle1);
-			this.Controls.Add(this.lollipopTextBox1);
 			this.Controls.Add(this.lollipopTabControl1);
 			this.Controls.Add(this.lollipopRoundCheckBox2);
 			this.Controls.Add(this.lollipopRoundCheckBox1);
@@ -346,12 +345,12 @@ namespace LollipopUI
 		private LollipopTabControl lollipopTabControl1;
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.TabPage tabPage2;
-		private LollipopTextBox lollipopTextBox1;
 		private LollipopToggle lollipopToggle1;
 		private LollipopSmallCard lollipopSmallCard1;
 		private LollipopCard lollipopCard1;
+		private LollipopPasswordInput lollipopPasswordInput1;
 		private LollipopFolderInPut lollipopFolderInPut1;
 		private LollipopFileInput lollipopFileInput1;
-		private LollipopPasswordInput lollipopPasswordInput1;
+		private LollipopTextBox lollipopTextBox1;
 	}
 }

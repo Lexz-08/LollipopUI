@@ -13,8 +13,6 @@ public class LollipopPasswordInput : Control
     HorizontalAlignment ALNType;
 
     int maxchars = 32767;
-    bool readOnly;
-    bool previousReadOnly;
     bool multiline;
     bool showPassword = false;
     bool Enable = true;
@@ -72,35 +70,6 @@ public class LollipopPasswordInput : Control
         }
     }
     [Category("Behavior")]
-    public bool Multiline
-    {
-        get
-        {
-            return multiline;
-        }
-        set
-        {
-            multiline = value;
-            if (LollipopTB != null)
-            {
-                LollipopTB.Multiline = value;
-
-                if (value)
-                {
-                    LollipopTB.Location = new Point(-3, 1);
-                    LollipopTB.Width = Width + 3;
-                    LollipopTB.Height = Height - 6;
-                }
-                else
-                {
-                    LollipopTB.Location = new Point(0, 1);
-                    LollipopTB.Width = Width;
-                    Height = 24;
-                }
-            }
-        }
-    }
-    [Category("Behavior")]
     public bool ShowPassword
     {
         get
@@ -116,23 +85,6 @@ public class LollipopPasswordInput : Control
     }
 
     [Category("Behavior")]
-    public bool ReadOnly
-    {
-        get
-        {
-            return readOnly;
-        }
-        set
-        {
-            readOnly = value;
-            if (LollipopTB != null)
-            {
-                LollipopTB.ReadOnly = value;
-            }
-        }
-    }
-
-    [Category("Behavior")]
     public bool IsEnabled
     {
         get { return Enable; }
@@ -142,14 +94,10 @@ public class LollipopPasswordInput : Control
 
             if (IsEnabled)
             {
-                readOnly = previousReadOnly;
-                LollipopTB.ReadOnly = previousReadOnly;
                 LollipopTB.ForeColor = EnabledStringColor;
             }
             else
             {
-                previousReadOnly = ReadOnly;
-                ReadOnly = true;
                 LollipopTB.ForeColor = DisabledStringColor;
             }
 
@@ -262,7 +210,7 @@ public class LollipopPasswordInput : Control
 
     public void AddTextBox()
     {
-        LollipopTB.Location = new Point(0, 3);
+        LollipopTB.Location = new Point(0, 4);
         LollipopTB.Size = new Size(Width, 18);
         LollipopTB.Text = Text;
 
@@ -283,7 +231,6 @@ public class LollipopPasswordInput : Control
     {
         Width = 300;
         DoubleBuffered = true;
-        previousReadOnly = ReadOnly;
 
         BackColorChanged += (sender, e) =>
         {
@@ -313,7 +260,7 @@ public class LollipopPasswordInput : Control
         LollipopTB.ForeColor = IsEnabled ? EnabledStringColor : DisabledStringColor;
         LollipopTB.UseSystemPasswordChar = !ShowPassword;
 
-        G.DrawLine(new Pen(new SolidBrush(IsEnabled ? EnabledUnFocusedColor : DisabledUnFocusedColor), 2), new Point(0, Height - 2), new Point(Width, Height - 2));
+        G.DrawLine(new Pen(new SolidBrush(IsEnabled ? EnabledUnFocusedColor : DisabledUnFocusedColor), 2), new Point(0, Height - 1), new Point(Width, Height - 2));
         if (IsEnabled)
         { G.FillRectangle(new SolidBrush(EnabledFocusedColor), PointAnimation, (float)Height - 3, SizeAnimation, 2); }
 

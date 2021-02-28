@@ -283,7 +283,7 @@ public class LollipopFileInput : Control
     public void AddTextBox()
     {
         LollipopTB.Text = Text;
-        LollipopTB.Location = new Point(0, 3);
+        LollipopTB.Location = new Point(0, 4);
         LollipopTB.Size = new Size(Width - 21, 18);
 
         LollipopTB.Multiline = false;
@@ -335,7 +335,7 @@ public class LollipopFileInput : Control
         LollipopTB.ForeColor = IsEnabled ? EnabledStringColor : DisabledStringColor;
         LollipopTB.UseSystemPasswordChar = UseSystemPasswordChar;
 
-        G.DrawLine(new Pen(new SolidBrush(IsEnabled ? EnabledUnFocusedColor : DisabledUnFocusedColor), 2), new Point(0, Height - 2), new Point(Width, Height - 2));
+        G.DrawLine(new Pen(new SolidBrush(IsEnabled ? EnabledUnFocusedColor : DisabledUnFocusedColor), 2), new Point(0, Height - 1), new Point(Width, Height - 2));
         if (IsEnabled)
         { G.FillRectangle(new SolidBrush(EnabledFocusedColor), PointAnimation, (float)Height - 3, SizeAnimation, 2); }
 
