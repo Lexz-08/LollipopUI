@@ -43,6 +43,30 @@ public class LollipopTabControl : TabControl
 		}
 	}
 
+	[Category("Appearance")]
+	public TabAlignment Alignment
+	{
+		get { return base.Alignment; }
+		set
+		{
+			if (value == TabAlignment.Left)
+			{
+				value = TabAlignment.Top;
+				base.Alignment = value;
+			}
+			else if (value == TabAlignment.Right)
+			{
+				value = TabAlignment.Bottom;
+				base.Alignment = value;
+			}
+			else
+			{
+				base.Alignment = value;
+			}
+			Invalidate();
+		}
+	}
+
 	protected override void OnPaint(PaintEventArgs e)
 	{
 		base.OnPaint(e);
@@ -56,16 +80,37 @@ public class LollipopTabControl : TabControl
 		{
 			if (i == SelectedIndex)
 			{
-				gfx.FillRectangle(new SolidBrush(tabColor), GetTabRect(i).X + 3, ItemSize.Height - 3, ItemSize.Width - 6, 3);
-				gfx.DrawString(TabPages[i].Text, fontManager.Roboto_Regular9, new SolidBrush(tabColor),
-					new Rectangle(GetTabRect(i).X, GetTabRect(i).Y - 3, GetTabRect(i).Width, GetTabRect(i).Height),
-					new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+				switch (Alignment)
+				{
+					case TabAlignment.Top:
+						gfx.FillRectangle(new SolidBrush(tabColor), GetTabRect(i).X + 3, ItemSize.Height - 3, ItemSize.Width - 6, 3);
+						gfx.DrawString(TabPages[i].Text, fontManager.Roboto_Regular9, new SolidBrush(tabColor),
+							new Rectangle(GetTabRect(i).X, GetTabRect(i).Y - 3, GetTabRect(i).Width, GetTabRect(i).Height),
+							new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+						break;
+					case TabAlignment.Bottom:
+						gfx.FillRectangle(new SolidBrush(tabColor), GetTabRect(i).X + 3, GetTabRect(i).Y + 2, ItemSize.Width - 6, 3);
+						gfx.DrawString(TabPages[i].Text, fontManager.Roboto_Regular9, new SolidBrush(tabColor),
+							new Rectangle(GetTabRect(i).X, GetTabRect(i).Y + 4, GetTabRect(i).Width, GetTabRect(i).Height),
+							new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+						break;
+				}
 			}
 			else
 			{
-				gfx.DrawString(TabPages[i].Text, fontManager.Roboto_Regular9, new SolidBrush(Color.Black),
-					new Rectangle(GetTabRect(i).X, GetTabRect(i).Y - 3, GetTabRect(i).Width, GetTabRect(i).Height),
-					new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+				switch (Alignment)
+				{
+					case TabAlignment.Top:
+						gfx.DrawString(TabPages[i].Text, fontManager.Roboto_Regular9, new SolidBrush(Color.Black),
+							new Rectangle(GetTabRect(i).X, GetTabRect(i).Y - 3, GetTabRect(i).Width, GetTabRect(i).Height),
+							new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+						break;
+					case TabAlignment.Bottom:
+						gfx.DrawString(TabPages[i].Text, fontManager.Roboto_Regular9, new SolidBrush(Color.Black),
+							new Rectangle(GetTabRect(i).X, GetTabRect(i).Y + 4, GetTabRect(i).Width, GetTabRect(i).Height),
+							new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+						break;
+				}
 			}
 		}
 	}

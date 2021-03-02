@@ -40,9 +40,6 @@ namespace LollipopUI
 			this.lollipopRadioCheckBox1 = new LollipopRadioCheckBox();
 			this.lollipopRoundCheckBox1 = new LollipopRoundCheckBox();
 			this.lollipopRoundCheckBox2 = new LollipopRoundCheckBox();
-			this.lollipopTabControl1 = new LollipopTabControl();
-			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.lollipopToggle1 = new LollipopToggle();
 			this.lollipopSmallCard1 = new LollipopSmallCard();
 			this.lollipopCard1 = new LollipopCard();
@@ -50,6 +47,9 @@ namespace LollipopUI
 			this.lollipopFolderInPut1 = new LollipopFolderInPut();
 			this.lollipopFileInput1 = new LollipopFileInput();
 			this.lollipopTextBox1 = new LollipopTextBox();
+			this.lollipopTabControl1 = new LollipopTabControl();
+			this.tabPage1 = new System.Windows.Forms.TabPage();
+			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.lollipopTabControl1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -168,39 +168,6 @@ namespace LollipopUI
 			this.lollipopRoundCheckBox2.Text = "RoundCheckBox";
 			this.lollipopRoundCheckBox2.UseVisualStyleBackColor = true;
 			// 
-			// lollipopTabControl1
-			// 
-			this.lollipopTabControl1.Controls.Add(this.tabPage1);
-			this.lollipopTabControl1.Controls.Add(this.tabPage2);
-			this.lollipopTabControl1.ItemSize = new System.Drawing.Size(120, 40);
-			this.lollipopTabControl1.Location = new System.Drawing.Point(309, 9);
-			this.lollipopTabControl1.Name = "lollipopTabControl1";
-			this.lollipopTabControl1.SelectedIndex = 0;
-			this.lollipopTabControl1.Size = new System.Drawing.Size(243, 235);
-			this.lollipopTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-			this.lollipopTabControl1.TabColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
-			this.lollipopTabControl1.TabIndex = 14;
-			// 
-			// tabPage1
-			// 
-			this.tabPage1.Location = new System.Drawing.Point(0, 40);
-			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage1.Size = new System.Drawing.Size(243, 195);
-			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "tabPage1";
-			this.tabPage1.UseVisualStyleBackColor = true;
-			// 
-			// tabPage2
-			// 
-			this.tabPage2.Location = new System.Drawing.Point(0, 40);
-			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(243, 195);
-			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "tabPage2";
-			this.tabPage2.UseVisualStyleBackColor = true;
-			// 
 			// lollipopToggle1
 			// 
 			this.lollipopToggle1.AutoSize = true;
@@ -300,10 +267,44 @@ namespace LollipopUI
 			this.lollipopTextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.lollipopTextBox1.UseSystemPasswordChar = false;
 			// 
+			// lollipopTabControl1
+			// 
+			this.lollipopTabControl1.Controls.Add(this.tabPage1);
+			this.lollipopTabControl1.Controls.Add(this.tabPage2);
+			this.lollipopTabControl1.ItemSize = new System.Drawing.Size(120, 40);
+			this.lollipopTabControl1.Location = new System.Drawing.Point(309, 9);
+			this.lollipopTabControl1.Name = "lollipopTabControl1";
+			this.lollipopTabControl1.SelectedIndex = 0;
+			this.lollipopTabControl1.Size = new System.Drawing.Size(244, 235);
+			this.lollipopTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+			this.lollipopTabControl1.TabColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
+			this.lollipopTabControl1.TabIndex = 38;
+			// 
+			// tabPage1
+			// 
+			this.tabPage1.Location = new System.Drawing.Point(0, 40);
+			this.tabPage1.Name = "tabPage1";
+			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage1.Size = new System.Drawing.Size(244, 195);
+			this.tabPage1.TabIndex = 0;
+			this.tabPage1.Text = "tabPage1";
+			this.tabPage1.UseVisualStyleBackColor = true;
+			// 
+			// tabPage2
+			// 
+			this.tabPage2.Location = new System.Drawing.Point(0, 40);
+			this.tabPage2.Name = "tabPage2";
+			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage2.Size = new System.Drawing.Size(244, 195);
+			this.tabPage2.TabIndex = 1;
+			this.tabPage2.Text = "tabPage2";
+			this.tabPage2.UseVisualStyleBackColor = true;
+			// 
 			// Sample
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.lollipopTabControl1);
 			this.Controls.Add(this.lollipopPasswordInput1);
 			this.Controls.Add(this.lollipopFolderInPut1);
 			this.Controls.Add(this.lollipopFileInput1);
@@ -311,7 +312,6 @@ namespace LollipopUI
 			this.Controls.Add(this.lollipopCard1);
 			this.Controls.Add(this.lollipopSmallCard1);
 			this.Controls.Add(this.lollipopToggle1);
-			this.Controls.Add(this.lollipopTabControl1);
 			this.Controls.Add(this.lollipopRoundCheckBox2);
 			this.Controls.Add(this.lollipopRoundCheckBox1);
 			this.Controls.Add(this.lollipopRadioCheckBox1);
@@ -342,9 +342,6 @@ namespace LollipopUI
 		private LollipopRadioCheckBox lollipopRadioCheckBox1;
 		private LollipopRoundCheckBox lollipopRoundCheckBox1;
 		private LollipopRoundCheckBox lollipopRoundCheckBox2;
-		private LollipopTabControl lollipopTabControl1;
-		private System.Windows.Forms.TabPage tabPage1;
-		private System.Windows.Forms.TabPage tabPage2;
 		private LollipopToggle lollipopToggle1;
 		private LollipopSmallCard lollipopSmallCard1;
 		private LollipopCard lollipopCard1;
@@ -352,5 +349,8 @@ namespace LollipopUI
 		private LollipopFolderInPut lollipopFolderInPut1;
 		private LollipopFileInput lollipopFileInput1;
 		private LollipopTextBox lollipopTextBox1;
+		private LollipopTabControl lollipopTabControl1;
+		private System.Windows.Forms.TabPage tabPage1;
+		private System.Windows.Forms.TabPage tabPage2;
 	}
 }
