@@ -10,8 +10,10 @@ Original Author: Viki4Tech
 #### MEGA.NZ Download (If those aren't working...)
 [mega.nz - Debug](https://mega.nz/file/2Y80QaiB#yjA2cJ4J5fB2eJYopQcKktHwxKnV6_aMBcE1XEeltDg)<br/>
 ### Changelog
+#### 3/1/2021
+  - fixed the positioning of the tab drawing and removed ability to change to left/right alignment on [LollipopTabControl.cs](./Controls/LollipopTabControl.cs)
 #### 2/28/2021
-  - fixed position of the textboxes and the animation line in [LollipopFileInput.cs](./Controls/LollipopFileInput.cs), [LollipopFolderInPut.cs](./Controls/LollipopFolderInPut.cs), [LollipopPasswordInput.cs](./Controls/LollipopPasswordInput.cs), and [LollipopTextBox.cs](./Controls/LollipopTextBox.cs).
+  - fixed position of the textboxes and the animation line in [LollipopFileInput.cs](./Controls/LollipopFileInput.cs), [LollipopFolderInPut.cs](./Controls/LollipopFolderInPut.cs), [LollipopPasswordInput.cs](./Controls/LollipopPasswordInput.cs), and [LollipopTextBox.cs](./Controls/LollipopTextBox.cs)
 #### 2/23/2021
   - added new [LollipopPasswordInput.cs](./Controls/LollipopPasswordInput.cs)
 #### 2/21/2021
