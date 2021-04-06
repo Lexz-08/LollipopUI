@@ -8,7 +8,7 @@ Original Author: Viki4Tech
 ### Download
 [LollipopUI](https://github.com/Lexz-08/LollipopUI/releases/download/LollipopUI/LollipopUI.dll)<br/>
 #### MEGA.NZ Download (If those aren't working...)
-[mega.nz - Release](https://mega.nz/file/6QkFkYJS#yjA2cJ4J5fB2eJYopQcKktHwxKnV6_aMBcE1XEeltDg)<br/>
+[mega.nz - Release](https://mega.nz/file/SJtAEDha#hyhilbQwq6J3MnIVC70xBKDND8MP6iB3RNxrJBbtlMk)<br/>
 ### Changelog
 #### 4/6/2021
   - fixed drawing issues with tab alignment in [LollipopTabControl.cs](/Controls/LollipopTabControl.cs)
