@@ -10,6 +10,9 @@ Original Author: Viki4Tech
 #### MEGA.NZ Download (If those aren't working...)
 [mega.nz - Release](https://mega.nz/file/6QkFkYJS#yjA2cJ4J5fB2eJYopQcKktHwxKnV6_aMBcE1XEeltDg)<br/>
 ### Changelog
+#### 4/6/2021
+  - fixed drawing issues with tab alignment in [LollipopTabControl.cs](/Controls/LollipopTabControl.cs)
+  - removed all controls in [Sample.cs](/Sample.cs)
 #### 3/1/2021
   - fixed the positioning of the tab drawing and removed ability to change to left/right alignment on [LollipopTabControl.cs](./Controls/LollipopTabControl.cs)
 #### 2/28/2021
