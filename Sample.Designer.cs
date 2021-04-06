@@ -30,180 +30,28 @@ namespace LollipopUI
         /// </summary>
         private void InitializeComponent()
         {
-			this.lollipopButton1 = new LollipopButton();
-			this.lollipopCheckBox1 = new LollipopCheckBox();
-			this.lollipopCheckBox2 = new LollipopCheckBox();
-			this.lollipopFlatButton1 = new LollipopFlatButton();
-			this.lollipopLabel1 = new LollipopLabel();
-			this.lollipopProgressBar1 = new LollipopProgressBar();
-			this.lollipopRadioButton1 = new LollipopRadioButton();
-			this.lollipopRadioCheckBox1 = new LollipopRadioCheckBox();
-			this.lollipopRoundCheckBox1 = new LollipopRoundCheckBox();
-			this.lollipopRoundCheckBox2 = new LollipopRoundCheckBox();
-			this.lollipopToggle1 = new LollipopToggle();
-			this.lollipopSmallCard1 = new LollipopSmallCard();
-			this.lollipopCard1 = new LollipopCard();
 			this.lollipopPasswordInput1 = new LollipopPasswordInput();
 			this.lollipopFolderInPut1 = new LollipopFolderInPut();
 			this.lollipopFileInput1 = new LollipopFileInput();
 			this.lollipopTextBox1 = new LollipopTextBox();
+			this.lollipopCard1 = new LollipopCard();
+			this.lollipopSmallCard1 = new LollipopSmallCard();
+			this.lollipopToggle1 = new LollipopToggle();
+			this.lollipopProgressBar1 = new LollipopProgressBar();
+			this.lollipopLabel1 = new LollipopLabel();
+			this.lollipopFlatButton1 = new LollipopFlatButton();
+			this.lollipopCheckBox2 = new LollipopCheckBox();
+			this.lollipopCheckBox1 = new LollipopCheckBox();
+			this.lollipopButton1 = new LollipopButton();
 			this.lollipopTabControl1 = new LollipopTabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.lollipopRoundCheckBox2 = new LollipopRoundCheckBox();
+			this.lollipopRoundCheckBox1 = new LollipopRoundCheckBox();
+			this.lollipopRadioButton1 = new LollipopRadioButton();
+			this.lollipopRadioCheckBox1 = new LollipopRadioCheckBox();
 			this.lollipopTabControl1.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// lollipopButton1
-			// 
-			this.lollipopButton1.BackColor = System.Drawing.Color.Transparent;
-			this.lollipopButton1.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopButton1.FontColor = System.Drawing.Color.White;
-			this.lollipopButton1.Location = new System.Drawing.Point(9, 9);
-			this.lollipopButton1.Name = "lollipopButton1";
-			this.lollipopButton1.Size = new System.Drawing.Size(143, 41);
-			this.lollipopButton1.TabIndex = 0;
-			this.lollipopButton1.Text = "Button";
-			// 
-			// lollipopCheckBox1
-			// 
-			this.lollipopCheckBox1.AutoSize = true;
-			this.lollipopCheckBox1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopCheckBox1.Location = new System.Drawing.Point(158, 9);
-			this.lollipopCheckBox1.Name = "lollipopCheckBox1";
-			this.lollipopCheckBox1.Size = new System.Drawing.Size(86, 20);
-			this.lollipopCheckBox1.TabIndex = 2;
-			this.lollipopCheckBox1.Text = "CheckBox";
-			this.lollipopCheckBox1.UseVisualStyleBackColor = true;
-			// 
-			// lollipopCheckBox2
-			// 
-			this.lollipopCheckBox2.AutoSize = true;
-			this.lollipopCheckBox2.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopCheckBox2.Checked = true;
-			this.lollipopCheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.lollipopCheckBox2.Location = new System.Drawing.Point(158, 30);
-			this.lollipopCheckBox2.Name = "lollipopCheckBox2";
-			this.lollipopCheckBox2.Size = new System.Drawing.Size(86, 20);
-			this.lollipopCheckBox2.TabIndex = 3;
-			this.lollipopCheckBox2.Text = "CheckBox";
-			this.lollipopCheckBox2.UseVisualStyleBackColor = true;
-			// 
-			// lollipopFlatButton1
-			// 
-			this.lollipopFlatButton1.BackColor = System.Drawing.Color.Transparent;
-			this.lollipopFlatButton1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopFlatButton1.Location = new System.Drawing.Point(9, 389);
-			this.lollipopFlatButton1.Name = "lollipopFlatButton1";
-			this.lollipopFlatButton1.Size = new System.Drawing.Size(294, 41);
-			this.lollipopFlatButton1.TabIndex = 5;
-			this.lollipopFlatButton1.Text = "FlatButton";
-			// 
-			// lollipopLabel1
-			// 
-			this.lollipopLabel1.AutoSize = true;
-			this.lollipopLabel1.BackColor = System.Drawing.Color.Transparent;
-			this.lollipopLabel1.Font = new System.Drawing.Font("Roboto Medium", 10F);
-			this.lollipopLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-			this.lollipopLabel1.Location = new System.Drawing.Point(6, 463);
-			this.lollipopLabel1.Name = "lollipopLabel1";
-			this.lollipopLabel1.Size = new System.Drawing.Size(44, 17);
-			this.lollipopLabel1.TabIndex = 7;
-			this.lollipopLabel1.Text = "Label";
-			// 
-			// lollipopProgressBar1
-			// 
-			this.lollipopProgressBar1.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopProgressBar1.Location = new System.Drawing.Point(9, 483);
-			this.lollipopProgressBar1.Name = "lollipopProgressBar1";
-			this.lollipopProgressBar1.Size = new System.Drawing.Size(294, 10);
-			this.lollipopProgressBar1.TabIndex = 8;
-			this.lollipopProgressBar1.Text = "lollipopProgressBar1";
-			this.lollipopProgressBar1.Value = 10;
-			// 
-			// lollipopRadioButton1
-			// 
-			this.lollipopRadioButton1.AutoSize = true;
-			this.lollipopRadioButton1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopRadioButton1.Location = new System.Drawing.Point(9, 499);
-			this.lollipopRadioButton1.Name = "lollipopRadioButton1";
-			this.lollipopRadioButton1.Size = new System.Drawing.Size(100, 19);
-			this.lollipopRadioButton1.TabIndex = 9;
-			this.lollipopRadioButton1.Text = "RadioButton";
-			this.lollipopRadioButton1.UseVisualStyleBackColor = true;
-			// 
-			// lollipopRadioCheckBox1
-			// 
-			this.lollipopRadioCheckBox1.AutoSize = true;
-			this.lollipopRadioCheckBox1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopRadioCheckBox1.Checked = true;
-			this.lollipopRadioCheckBox1.Location = new System.Drawing.Point(115, 498);
-			this.lollipopRadioCheckBox1.Name = "lollipopRadioCheckBox1";
-			this.lollipopRadioCheckBox1.Size = new System.Drawing.Size(121, 20);
-			this.lollipopRadioCheckBox1.TabIndex = 10;
-			this.lollipopRadioCheckBox1.TabStop = true;
-			this.lollipopRadioCheckBox1.Text = "RadioCheckBox";
-			this.lollipopRadioCheckBox1.UseVisualStyleBackColor = true;
-			// 
-			// lollipopRoundCheckBox1
-			// 
-			this.lollipopRoundCheckBox1.AutoSize = true;
-			this.lollipopRoundCheckBox1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopRoundCheckBox1.Location = new System.Drawing.Point(9, 524);
-			this.lollipopRoundCheckBox1.Name = "lollipopRoundCheckBox1";
-			this.lollipopRoundCheckBox1.Size = new System.Drawing.Size(125, 19);
-			this.lollipopRoundCheckBox1.TabIndex = 11;
-			this.lollipopRoundCheckBox1.Text = "RoundCheckBox";
-			this.lollipopRoundCheckBox1.UseVisualStyleBackColor = true;
-			// 
-			// lollipopRoundCheckBox2
-			// 
-			this.lollipopRoundCheckBox2.AutoSize = true;
-			this.lollipopRoundCheckBox2.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopRoundCheckBox2.Checked = true;
-			this.lollipopRoundCheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.lollipopRoundCheckBox2.Location = new System.Drawing.Point(9, 549);
-			this.lollipopRoundCheckBox2.Name = "lollipopRoundCheckBox2";
-			this.lollipopRoundCheckBox2.Size = new System.Drawing.Size(125, 19);
-			this.lollipopRoundCheckBox2.TabIndex = 12;
-			this.lollipopRoundCheckBox2.Text = "RoundCheckBox";
-			this.lollipopRoundCheckBox2.UseVisualStyleBackColor = true;
-			// 
-			// lollipopToggle1
-			// 
-			this.lollipopToggle1.AutoSize = true;
-			this.lollipopToggle1.EllipseBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(209)))));
-			this.lollipopToggle1.EllipseColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
-			this.lollipopToggle1.Location = new System.Drawing.Point(309, 280);
-			this.lollipopToggle1.Name = "lollipopToggle1";
-			this.lollipopToggle1.Size = new System.Drawing.Size(47, 19);
-			this.lollipopToggle1.TabIndex = 17;
-			this.lollipopToggle1.Text = "lollipopToggle1";
-			this.lollipopToggle1.UseVisualStyleBackColor = true;
-			// 
-			// lollipopSmallCard1
-			// 
-			this.lollipopSmallCard1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
-			this.lollipopSmallCard1.Image = null;
-			this.lollipopSmallCard1.Info = "Info";
-			this.lollipopSmallCard1.Location = new System.Drawing.Point(140, 524);
-			this.lollipopSmallCard1.Name = "lollipopSmallCard1";
-			this.lollipopSmallCard1.Size = new System.Drawing.Size(182, 52);
-			this.lollipopSmallCard1.TabIndex = 18;
-			this.lollipopSmallCard1.Text = "lollipopSmallCard1";
-			this.lollipopSmallCard1.ThumbnailColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
-			// 
-			// lollipopCard1
-			// 
-			this.lollipopCard1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
-			this.lollipopCard1.ContentColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-			this.lollipopCard1.ContentText = "Card Content / Message";
-			this.lollipopCard1.Image = null;
-			this.lollipopCard1.Location = new System.Drawing.Point(8, 56);
-			this.lollipopCard1.Name = "lollipopCard1";
-			this.lollipopCard1.Size = new System.Drawing.Size(294, 303);
-			this.lollipopCard1.TabIndex = 24;
-			this.lollipopCard1.Text = "Card";
-			this.lollipopCard1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
 			// 
 			// lollipopPasswordInput1
 			// 
@@ -267,6 +115,110 @@ namespace LollipopUI
 			this.lollipopTextBox1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.lollipopTextBox1.UseSystemPasswordChar = false;
 			// 
+			// lollipopCard1
+			// 
+			this.lollipopCard1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
+			this.lollipopCard1.ContentColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+			this.lollipopCard1.ContentText = "Card Content / Message";
+			this.lollipopCard1.Image = null;
+			this.lollipopCard1.Location = new System.Drawing.Point(8, 56);
+			this.lollipopCard1.Name = "lollipopCard1";
+			this.lollipopCard1.Size = new System.Drawing.Size(294, 303);
+			this.lollipopCard1.TabIndex = 24;
+			this.lollipopCard1.Text = "Card";
+			this.lollipopCard1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
+			// 
+			// lollipopSmallCard1
+			// 
+			this.lollipopSmallCard1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
+			this.lollipopSmallCard1.Image = null;
+			this.lollipopSmallCard1.Info = "Info";
+			this.lollipopSmallCard1.Location = new System.Drawing.Point(140, 524);
+			this.lollipopSmallCard1.Name = "lollipopSmallCard1";
+			this.lollipopSmallCard1.Size = new System.Drawing.Size(182, 52);
+			this.lollipopSmallCard1.TabIndex = 18;
+			this.lollipopSmallCard1.Text = "lollipopSmallCard1";
+			this.lollipopSmallCard1.ThumbnailColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
+			// 
+			// lollipopToggle1
+			// 
+			this.lollipopToggle1.AutoSize = true;
+			this.lollipopToggle1.EllipseBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(115)))), ((int)(((byte)(209)))));
+			this.lollipopToggle1.EllipseColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopToggle1.Location = new System.Drawing.Point(309, 280);
+			this.lollipopToggle1.Name = "lollipopToggle1";
+			this.lollipopToggle1.Size = new System.Drawing.Size(47, 19);
+			this.lollipopToggle1.TabIndex = 17;
+			this.lollipopToggle1.Text = "lollipopToggle1";
+			this.lollipopToggle1.UseVisualStyleBackColor = true;
+			// 
+			// lollipopProgressBar1
+			// 
+			this.lollipopProgressBar1.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopProgressBar1.Location = new System.Drawing.Point(9, 483);
+			this.lollipopProgressBar1.Name = "lollipopProgressBar1";
+			this.lollipopProgressBar1.Size = new System.Drawing.Size(294, 10);
+			this.lollipopProgressBar1.TabIndex = 8;
+			this.lollipopProgressBar1.Text = "lollipopProgressBar1";
+			this.lollipopProgressBar1.Value = 10;
+			// 
+			// lollipopLabel1
+			// 
+			this.lollipopLabel1.AutoSize = true;
+			this.lollipopLabel1.BackColor = System.Drawing.Color.Transparent;
+			this.lollipopLabel1.Font = new System.Drawing.Font("Roboto Medium", 10F);
+			this.lollipopLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
+			this.lollipopLabel1.Location = new System.Drawing.Point(6, 463);
+			this.lollipopLabel1.Name = "lollipopLabel1";
+			this.lollipopLabel1.Size = new System.Drawing.Size(44, 17);
+			this.lollipopLabel1.TabIndex = 7;
+			this.lollipopLabel1.Text = "Label";
+			// 
+			// lollipopFlatButton1
+			// 
+			this.lollipopFlatButton1.BackColor = System.Drawing.Color.Transparent;
+			this.lollipopFlatButton1.FontColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopFlatButton1.Location = new System.Drawing.Point(9, 389);
+			this.lollipopFlatButton1.Name = "lollipopFlatButton1";
+			this.lollipopFlatButton1.Size = new System.Drawing.Size(294, 41);
+			this.lollipopFlatButton1.TabIndex = 5;
+			this.lollipopFlatButton1.Text = "FlatButton";
+			// 
+			// lollipopCheckBox2
+			// 
+			this.lollipopCheckBox2.AutoSize = true;
+			this.lollipopCheckBox2.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopCheckBox2.Checked = true;
+			this.lollipopCheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.lollipopCheckBox2.Location = new System.Drawing.Point(158, 30);
+			this.lollipopCheckBox2.Name = "lollipopCheckBox2";
+			this.lollipopCheckBox2.Size = new System.Drawing.Size(86, 20);
+			this.lollipopCheckBox2.TabIndex = 3;
+			this.lollipopCheckBox2.Text = "CheckBox";
+			this.lollipopCheckBox2.UseVisualStyleBackColor = true;
+			// 
+			// lollipopCheckBox1
+			// 
+			this.lollipopCheckBox1.AutoSize = true;
+			this.lollipopCheckBox1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopCheckBox1.Location = new System.Drawing.Point(158, 9);
+			this.lollipopCheckBox1.Name = "lollipopCheckBox1";
+			this.lollipopCheckBox1.Size = new System.Drawing.Size(86, 20);
+			this.lollipopCheckBox1.TabIndex = 2;
+			this.lollipopCheckBox1.Text = "CheckBox";
+			this.lollipopCheckBox1.UseVisualStyleBackColor = true;
+			// 
+			// lollipopButton1
+			// 
+			this.lollipopButton1.BackColor = System.Drawing.Color.Transparent;
+			this.lollipopButton1.BGColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopButton1.FontColor = System.Drawing.Color.White;
+			this.lollipopButton1.Location = new System.Drawing.Point(9, 9);
+			this.lollipopButton1.Name = "lollipopButton1";
+			this.lollipopButton1.Size = new System.Drawing.Size(143, 41);
+			this.lollipopButton1.TabIndex = 0;
+			this.lollipopButton1.Text = "Button";
+			// 
 			// lollipopTabControl1
 			// 
 			this.lollipopTabControl1.Controls.Add(this.tabPage1);
@@ -278,7 +230,7 @@ namespace LollipopUI
 			this.lollipopTabControl1.Size = new System.Drawing.Size(244, 235);
 			this.lollipopTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
 			this.lollipopTabControl1.TabColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(182)))), ((int)(((byte)(121)))));
-			this.lollipopTabControl1.TabIndex = 38;
+			this.lollipopTabControl1.TabIndex = 39;
 			// 
 			// tabPage1
 			// 
@@ -300,10 +252,62 @@ namespace LollipopUI
 			this.tabPage2.Text = "tabPage2";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
+			// lollipopRoundCheckBox2
+			// 
+			this.lollipopRoundCheckBox2.AutoSize = true;
+			this.lollipopRoundCheckBox2.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopRoundCheckBox2.Checked = true;
+			this.lollipopRoundCheckBox2.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.lollipopRoundCheckBox2.Location = new System.Drawing.Point(9, 551);
+			this.lollipopRoundCheckBox2.Name = "lollipopRoundCheckBox2";
+			this.lollipopRoundCheckBox2.Size = new System.Drawing.Size(125, 19);
+			this.lollipopRoundCheckBox2.TabIndex = 42;
+			this.lollipopRoundCheckBox2.Text = "RoundCheckBox";
+			this.lollipopRoundCheckBox2.UseVisualStyleBackColor = true;
+			// 
+			// lollipopRoundCheckBox1
+			// 
+			this.lollipopRoundCheckBox1.AutoSize = true;
+			this.lollipopRoundCheckBox1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopRoundCheckBox1.Location = new System.Drawing.Point(9, 526);
+			this.lollipopRoundCheckBox1.Name = "lollipopRoundCheckBox1";
+			this.lollipopRoundCheckBox1.Size = new System.Drawing.Size(125, 19);
+			this.lollipopRoundCheckBox1.TabIndex = 41;
+			this.lollipopRoundCheckBox1.Text = "RoundCheckBox";
+			this.lollipopRoundCheckBox1.UseVisualStyleBackColor = true;
+			// 
+			// lollipopRadioButton1
+			// 
+			this.lollipopRadioButton1.AutoSize = true;
+			this.lollipopRadioButton1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopRadioButton1.Location = new System.Drawing.Point(9, 501);
+			this.lollipopRadioButton1.Name = "lollipopRadioButton1";
+			this.lollipopRadioButton1.Size = new System.Drawing.Size(100, 19);
+			this.lollipopRadioButton1.TabIndex = 40;
+			this.lollipopRadioButton1.Text = "RadioButton";
+			this.lollipopRadioButton1.UseVisualStyleBackColor = true;
+			// 
+			// lollipopRadioCheckBox1
+			// 
+			this.lollipopRadioCheckBox1.AutoSize = true;
+			this.lollipopRadioCheckBox1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(142)))), ((int)(((byte)(245)))));
+			this.lollipopRadioCheckBox1.Checked = true;
+			this.lollipopRadioCheckBox1.Location = new System.Drawing.Point(115, 500);
+			this.lollipopRadioCheckBox1.Name = "lollipopRadioCheckBox1";
+			this.lollipopRadioCheckBox1.Size = new System.Drawing.Size(121, 20);
+			this.lollipopRadioCheckBox1.TabIndex = 43;
+			this.lollipopRadioCheckBox1.TabStop = true;
+			this.lollipopRadioCheckBox1.Text = "RadioCheckBox";
+			this.lollipopRadioCheckBox1.UseVisualStyleBackColor = true;
+			// 
 			// Sample
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.lollipopRadioCheckBox1);
+			this.Controls.Add(this.lollipopRoundCheckBox2);
+			this.Controls.Add(this.lollipopRoundCheckBox1);
+			this.Controls.Add(this.lollipopRadioButton1);
 			this.Controls.Add(this.lollipopTabControl1);
 			this.Controls.Add(this.lollipopPasswordInput1);
 			this.Controls.Add(this.lollipopFolderInPut1);
@@ -312,10 +316,6 @@ namespace LollipopUI
 			this.Controls.Add(this.lollipopCard1);
 			this.Controls.Add(this.lollipopSmallCard1);
 			this.Controls.Add(this.lollipopToggle1);
-			this.Controls.Add(this.lollipopRoundCheckBox2);
-			this.Controls.Add(this.lollipopRoundCheckBox1);
-			this.Controls.Add(this.lollipopRadioCheckBox1);
-			this.Controls.Add(this.lollipopRadioButton1);
 			this.Controls.Add(this.lollipopProgressBar1);
 			this.Controls.Add(this.lollipopLabel1);
 			this.Controls.Add(this.lollipopFlatButton1);
@@ -338,10 +338,6 @@ namespace LollipopUI
 		private LollipopFlatButton lollipopFlatButton1;
 		private LollipopLabel lollipopLabel1;
 		private LollipopProgressBar lollipopProgressBar1;
-		private LollipopRadioButton lollipopRadioButton1;
-		private LollipopRadioCheckBox lollipopRadioCheckBox1;
-		private LollipopRoundCheckBox lollipopRoundCheckBox1;
-		private LollipopRoundCheckBox lollipopRoundCheckBox2;
 		private LollipopToggle lollipopToggle1;
 		private LollipopSmallCard lollipopSmallCard1;
 		private LollipopCard lollipopCard1;
@@ -352,5 +348,9 @@ namespace LollipopUI
 		private LollipopTabControl lollipopTabControl1;
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.TabPage tabPage2;
+		private LollipopRoundCheckBox lollipopRoundCheckBox2;
+		private LollipopRoundCheckBox lollipopRoundCheckBox1;
+		private LollipopRadioButton lollipopRadioButton1;
+		private LollipopRadioCheckBox lollipopRadioCheckBox1;
 	}
 }

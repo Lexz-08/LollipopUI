@@ -94,6 +94,11 @@ public class LollipopTabControl : TabControl
 							new Rectangle(GetTabRect(i).X, GetTabRect(i).Y + 4, GetTabRect(i).Width, GetTabRect(i).Height),
 							new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
 						break;
+					default:
+						gfx.DrawString(TabPages[i].Text, fontManager.Roboto_Regular9, new SolidBrush(tabColor),
+							new Rectangle(GetTabRect(i).X, GetTabRect(i).Y - 3, GetTabRect(i).Width, GetTabRect(i).Height),
+							new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+						break;
 				}
 			}
 			else
@@ -108,6 +113,11 @@ public class LollipopTabControl : TabControl
 					case TabAlignment.Bottom:
 						gfx.DrawString(TabPages[i].Text, fontManager.Roboto_Regular9, new SolidBrush(Color.Black),
 							new Rectangle(GetTabRect(i).X, GetTabRect(i).Y + 4, GetTabRect(i).Width, GetTabRect(i).Height),
+							new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+						break;
+					default:
+						gfx.DrawString(TabPages[i].Text, fontManager.Roboto_Regular9, new SolidBrush(Color.Black),
+							new Rectangle(GetTabRect(i).X, GetTabRect(i).Y - 3, GetTabRect(i).Width, GetTabRect(i).Height),
 							new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
 						break;
 				}
